@@ -46,7 +46,7 @@ export function Page() {
   }, [search]);
 
   return (
-    <main className="mx-auto max-w-7xl bg-white px-3 py-6 text-black sm:px-4 sm:py-8">
+    <main className="mx-auto  bg-white px-3 py-6 text-black sm:px-4 sm:py-8">
       {/* Breadcrumb */}
       {/* <nav className="mb-8 flex items-center gap-2 text-sm text-slate-500">
         <span className="cursor-pointer hover:text-orange-500">Home</span>
