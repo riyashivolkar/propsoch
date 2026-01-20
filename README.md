@@ -1,7 +1,8 @@
 Project README — Discovery Map (Next.js + React-Leaflet)
 
 # Project URL
-[<url>](https://propsoch-o6v6.vercel.app)
+https://propsoch-o6v6.vercel.app
+
 
 # Short summary
 This repo is a Next.js app that renders a property discovery map using react-leaflet. The app currently contains a few UI/UX bugs and small functional issues. Your task is to run the app locally, locate the TODO tasks in the codebase (files called discovery-map.tsx and page.tsx), and apply sensible fixes. This README explains how to run the app, where the tasks are, recommended fixes (practical, minimal, and robust), and how to verify them.
