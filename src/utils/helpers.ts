@@ -1,60 +1,62 @@
-
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
-import { tv } from "tailwind-variants"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+import { tv } from "tailwind-variants";
 
 export const formatDate = (
   dateString: string,
   locale: string = "en-US",
-  options: Intl.DateTimeFormatOptions = { year: "numeric", month: "short" }
+  options: Intl.DateTimeFormatOptions = { year: "numeric", month: "short" },
 ): string => {
   if (!dateString) {
-    console.log("No date string provided")
-    return "Invalid Date"
+    console.log("No date string provided");
+    return "Invalid Date";
   }
-  const date = new Date(dateString)
+  const date = new Date(dateString);
 
   if (isNaN(date.getTime())) {
-    console.log(`Invalid date string provided: ${dateString}`)
-    return "Invalid Date"
+    console.log(`Invalid date string provided: ${dateString}`);
+    return "Invalid Date";
   }
 
-  return new Intl.DateTimeFormat(locale, options).format(date)
-}
+  return new Intl.DateTimeFormat(locale, options).format(date);
+};
 
 export const formatPrice = (amount: number, fullFormat: boolean): string => {
-  if (amount === 0) return "0"
+  if (amount === 0) return "0";
 
   if (amount >= 10000000) {
-    const value = parseFloat((amount / 10000000).toFixed(2))
+    const value = parseFloat((amount / 10000000).toFixed(2));
     const suffix =
-      value === 1 ? (fullFormat ? "Crore" : "Cr") : fullFormat ? "Crores" : "Cr"
-    return `${value} ${suffix}`
+      value === 1
+        ? fullFormat
+          ? "Crore"
+          : "Cr"
+        : fullFormat
+          ? "Crores"
+          : "Cr";
+    return `${value} ${suffix}`;
   }
 
-  const value = parseFloat((amount / 100000).toFixed(2))
+  const value = parseFloat((amount / 100000).toFixed(2));
   const suffix =
-    value === 1 ? (fullFormat ? "Lakh" : "L") : fullFormat ? "Lakhs" : "L"
-  return `${value} ${suffix}`
-}
+    value === 1 ? (fullFormat ? "Lakh" : "L") : fullFormat ? "Lakhs" : "L";
+  return `${value} ${suffix}`;
+};
 
 export function concatenateTypologies(input: string[] | number[]) {
-  const lastType = input[input.length - 1]
+  const lastType = input[input.length - 1];
   if (input.length > 1) {
-    const otherTypes = input.slice(0, -1)
-    let result = otherTypes.join(", ")
-    return result + " & " + lastType
+    const otherTypes = input.slice(0, -1);
+    let result = otherTypes.join(", ");
+    return result + " & " + lastType;
   } else {
-    return lastType
+    return lastType;
   }
 }
 
-
-
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
-
 
 // Shared color variants
 const colorVariants = {
@@ -71,7 +73,7 @@ const colorVariants = {
   danger: "text-[#F64C4C]",
   warning: "text-[#FFAD0D]",
   info: "text-[#3B95F6]",
-}
+};
 export const para = tv({
   base: "inline font-regular",
   variants: {
@@ -87,4 +89,25 @@ export const para = tv({
   defaultVariants: {
     size: "md",
   },
-})
+});
+
+// utils/property.ts
+
+export const formatPriceRange = (min: number, max: number) => {
+  const toCr = (v: number) => (v / 1e7).toFixed(2);
+  return `₹${toCr(min)} – ${toCr(max)} Cr`;
+};
+
+export const formatAreaRange = (min: number, max: number) =>
+  `${min} – ${max} sq ft`;
+
+export const deriveBathsFromTypologies = (typologies: string[]) => {
+  const nums = typologies.map((t) => parseInt(t)).filter((n) => !isNaN(n));
+
+  if (!nums.length) return "—";
+
+  const min = Math.min(...nums);
+  const max = Math.max(...nums);
+
+  return min === max ? `${min}` : `${min}–${max}`;
+};

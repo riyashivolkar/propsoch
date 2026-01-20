@@ -15,8 +15,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "oakridge-county-rajaji-nagar",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
       type: "Row House",
       developerId: 114,
       developerName: "Oakridge Properties",
@@ -40,8 +39,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "nova-haven-jp-nagar",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9",
       type: "Plot",
       developerId: 98,
       developerName: "Nova Habitat",
@@ -90,8 +88,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "urban-residency-electronic-city",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
       type: "Villa",
       developerId: 39,
       developerName: "Urban Nest",
@@ -115,8 +112,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "elite-park-koramangala",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
       type: "Plot",
       developerId: 122,
       developerName: "Elite Estates",
@@ -140,8 +136,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "elite-greens-koramangala",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6",
       type: "Plot",
       developerId: 240,
       developerName: "Elite Estates",
@@ -165,8 +160,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "crystal-park-rajaji-nagar",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
       type: "Villa",
       developerId: 74,
       developerName: "Crystal Constructions",
@@ -190,8 +184,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "astoria-park-jp-nagar",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00",
       type: "Plot",
       developerId: 118,
       developerName: "Astoria Spaces",
@@ -215,8 +208,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "vertex-meadows-varthur",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
       type: "Apartment",
       developerId: 135,
       developerName: "Vertex Ventures",
@@ -240,8 +232,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "vista-heights-banashankari",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
       type: "Apartment",
       developerId: 29,
       developerName: "Vista Buildcon",
@@ -265,8 +256,7 @@ export const PropertyListing = {
       projectStatus: "available",
       city: "Bengaluru",
       slug: "edenstone-meadows-devanahalli",
-      image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=640&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0",
       type: "Plot",
       developerId: 181,
       developerName: "Edenstone Developers",
