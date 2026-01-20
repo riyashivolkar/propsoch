@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
-const nextConfig:NextConfig = {
+const nextConfig: NextConfig = {
   reactStrictMode: false,
-  distDir: "build",
   images: {
     remotePatterns: [
       {
@@ -11,5 +10,6 @@ const nextConfig:NextConfig = {
       },
     ],
   },
-}
+};
+
 export default nextConfig;
